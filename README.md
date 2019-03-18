@@ -29,7 +29,6 @@ deterministic model 每次都會生出固定的圖片 1 to 1 Mapping
 
 
 
-
 unsupervised learning (不需pair instances)
 
 可以學到兩個dataset共同特徵，如貓和狗就會學到眼睛、鼻子、嘴巴。
@@ -45,7 +44,6 @@ supervised learning 透過 pair instances
 
 
 
-
 content code / style code:
 
 content code:
@@ -54,7 +52,6 @@ content code:
 convolution layer使用Instance Normalization(IN)
 近年來style transfer方面的工作，使用IN能得到較好的結果
 不過看文章的時候記得注意這篇文章的日期，這領域進步的太快。。。
-
 
 
 sytle code:
@@ -79,7 +76,6 @@ convolution layer使用Batch Normalization
 - C — conten code，每張圖片映射到一個content code, 記錄共有的特徵。
 
 - S — style code，X2的圖片產生是基於S2的style code(這部分為random產生)，不同的style code產生不同的圖片。
-
 
 
 

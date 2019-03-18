@@ -58,7 +58,7 @@ convolution layer使用Batch Normalization
 
 概念如下
 
-![image](https://github.com/willy-lo/CVFX-HW2/blob/master/picture_3.jpeg)
+![image](https://github.com/willy-lo/CVFX-HW2/blob/master/picture_3.png)
 
 如上圖我們可以看到
 
@@ -74,7 +74,7 @@ model 架構
 
 encoder — decoder 架構如下
 
-![image](https://github.com/willy-lo/CVFX-HW2/blob/master/picture_4.jpeg)
+![image](https://github.com/willy-lo/CVFX-HW2/blob/master/picture_4.png)
 
 這邊的MLP是multilayer perceptron，可看作是linear model。
 

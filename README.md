@@ -16,7 +16,15 @@ MUNIT 介紹— Multimodal Unsupervised Image-to-Image Translation
 
 相關介紹:
 
-UNIT:
+Multimodal:
+
+這邊的Multimodal指的是給定一張圖片可以生成多個圖片。
+
+專業一點的說法就是stochastic model -> 每次都會出現不同的圖片
+
+stochastic model 的對比為 deterministic model
+
+deterministic model 每次都會生出固定的圖片 1 to 1 Mapping
 
 unsupervised learning (不需pair instances)
 
@@ -29,27 +37,6 @@ supervised learning 透過 pair instances
 學到共通特徵，然後經由random一個數值來改變輸出，
 
 以達到 1 to Many，btw這篇提出的訓練方法也挺有趣的，使用兩種model做訓練，但是兩種model的部分component相同的。
-
-btw，Bicycle GAN是為了解決 2017 CVPR的paper : pix2pix
-
-因pix2pix只能的1對1的輸出
-
-
-Multimodal:
-
-這邊的Multimodal指的是給定一張圖片可以生成多個圖片。
-
-專業一點的說法就是stochastic model -> 每次都會出現不同的圖片
-
-stochastic model 的對比為 deterministic model
-
-deterministic model 每次都會生出固定的圖片 1 to 1 Mapping
-
-Unsupervised:
-
-這邊的Unsupervised的概念如下
-
-將兩個不同的dataset的圖片一起訓練，例如：貓和狗以往都是成對的資料輸入，以手勢來說，就是兩個人都比同樣的手勢，而這篇論文是可以不用成對的輸入。
 
 content code / style code:
 
@@ -70,6 +57,33 @@ convolution layer使用Batch Normalization
 這樣不管S1, S2怎麼train， 可能都會產生差不多的圖片。
 
 概念如下
+
+![image](https://github.com/willy-lo/CVFX-HW2/blob/master/picture_3.jpeg)
+
+如上圖我們可以看到
+
+- X1 — input image
+
+- X2 — output image
+
+- C — conten code，每張圖片映射到一個content code, 記錄共有的特徵。
+
+- S — style code，X2的圖片產生是基於S2的style code(這部分為random產生)，不同的style code產生不同的圖片。
+
+model 架構
+
+encoder — decoder 架構如下
+
+![image](https://github.com/willy-lo/CVFX-HW2/blob/master/picture_4.jpeg)
+
+這邊的MLP是multilayer perceptron，可看作是linear model。
+
+
+
+
+
+
+
 
 
 

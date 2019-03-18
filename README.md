@@ -26,6 +26,10 @@ stochastic model 的對比為 deterministic model
 
 deterministic model 每次都會生出固定的圖片 1 to 1 Mapping
 
+
+
+
+
 unsupervised learning (不需pair instances)
 
 可以學到兩個dataset共同特徵，如貓和狗就會學到眼睛、鼻子、嘴巴。
@@ -38,6 +42,10 @@ supervised learning 透過 pair instances
 
 以達到 1 to Many，btw這篇提出的訓練方法也挺有趣的，使用兩種model做訓練，但是兩種model的部分component相同的。
 
+
+
+
+
 content code / style code:
 
 content code:
@@ -46,6 +54,8 @@ content code:
 convolution layer使用Instance Normalization(IN)
 近年來style transfer方面的工作，使用IN能得到較好的結果
 不過看文章的時候記得注意這篇文章的日期，這領域進步的太快。。。
+
+
 
 sytle code:
 
@@ -70,6 +80,10 @@ convolution layer使用Batch Normalization
 
 - S — style code，X2的圖片產生是基於S2的style code(這部分為random產生)，不同的style code產生不同的圖片。
 
+
+
+
+
 model 架構
 
 encoder — decoder 架構如下
@@ -77,6 +91,8 @@ encoder — decoder 架構如下
 ![image](https://github.com/willy-lo/CVFX-HW2/blob/master/picture_4.png)
 
 這邊的MLP是multilayer perceptron，可看作是linear model。
+
+
 
 loss function
 

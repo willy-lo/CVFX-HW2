@@ -80,13 +80,17 @@ encoder — decoder 架構如下
 
 loss function
 
+![image](https://github.com/willy-lo/CVFX-HW2/blob/master/picture_5.png)
 
+![image](https://github.com/willy-lo/CVFX-HW2/blob/master/formulation_1.png)
 
 上圖可看作我們希望自己的reconstruction error要最小，
 
 意思是一張圖片(x)進入encoder再進去decoder出來的結果(y)
 
 希望x和y相近。
+
+![image](https://github.com/willy-lo/CVFX-HW2/blob/master/picture_6.png)
 
 上圖可看作我們希望自己的latent reconstruction error要最小，
 

@@ -78,6 +78,24 @@ encoder — decoder 架構如下
 
 這邊的MLP是multilayer perceptron，可看作是linear model。
 
+loss function
+
+
+
+上圖可看作我們希望自己的reconstruction error要最小，
+
+意思是一張圖片(x)進入encoder再進去decoder出來的結果(y)
+
+希望x和y相近。
+
+上圖可看作我們希望自己的latent reconstruction error要最小，
+
+（2）意思是大眼睛的狗狗丟進model也要生出大眼睛的貓咪
+希望x和y的content code相近。
+
+（3）意思是科基狗丟進decoder解碼後再編碼還能夠知道這style code是柯基狗
+希望x和y的style code相近。
+
 
 
 

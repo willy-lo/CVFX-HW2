@@ -11,3 +11,65 @@ MUNIT 介紹— Multimodal Unsupervised Image-to-Image Translation
 ![image](https://github.com/willy-lo/CVFX-HW2/blob/master/picture_1.jpeg)
 
 ![image](https://github.com/willy-lo/CVFX-HW2/blob/master/picture_2.jpeg)
+
+
+
+相關介紹:
+
+UNIT:
+
+unsupervised learning (不需pair instances)
+
+可以學到兩個dataset共同特徵，如貓和狗就會學到眼睛、鼻子、嘴巴。
+
+Bicycle GAN — NIPS 2017
+
+supervised learning 透過 pair instances
+
+學到共通特徵，然後經由random一個數值來改變輸出，
+
+以達到 1 to Many，btw這篇提出的訓練方法也挺有趣的，使用兩種model做訓練，但是兩種model的部分component相同的。
+
+btw，Bicycle GAN是為了解決 2017 CVPR的paper : pix2pix
+
+因pix2pix只能的1對1的輸出
+
+
+Multimodal:
+
+這邊的Multimodal指的是給定一張圖片可以生成多個圖片。
+
+專業一點的說法就是stochastic model -> 每次都會出現不同的圖片
+
+stochastic model 的對比為 deterministic model
+
+deterministic model 每次都會生出固定的圖片 1 to 1 Mapping
+
+Unsupervised:
+
+這邊的Unsupervised的概念如下
+
+將兩個不同的dataset的圖片一起訓練，例如：貓和狗以往都是成對的資料輸入，以手勢來說，就是兩個人都比同樣的手勢，而這篇論文是可以不用成對的輸入。
+
+content code / style code:
+
+content code:
+
+我們可以想成是每個class共有的特徵，如狗和貓都有眼睛 嘴巴 鼻子
+convolution layer使用Instance Normalization(IN)
+近年來style transfer方面的工作，使用IN能得到較好的結果
+不過看文章的時候記得注意這篇文章的日期，這領域進步的太快。。。
+
+sytle code:
+
+我們可以想成是每個class各自的特徵，
+如狗有柯基犬和哈士奇，雖然都是狗，但外表差很多
+convolution layer使用Batch Normalization
+論文指出，這邊不用IN是因為，每個style有各自的特性分佈。
+如果使用IN會將mean和variance移除。
+這樣不管S1, S2怎麼train， 可能都會產生差不多的圖片。
+
+概念如下
+
+
+

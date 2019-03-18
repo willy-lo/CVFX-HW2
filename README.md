@@ -1,6 +1,12 @@
 # CVFX-HW2
 
-MUNIT 介紹— Multimodal Unsupervised Image-to-Image Translation
+1.training 進度條:
+
+2.test結果比較:
+
+3.別的方法:
+
+4.MUNIT 介紹— Multimodal Unsupervised Image-to-Image Translation
 
 簡介:
 

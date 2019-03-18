@@ -37,9 +37,7 @@ Bicycle GAN — NIPS 2017
 
 supervised learning 透過 pair instances
 
-學到共通特徵，然後經由random一個數值來改變輸出，
-
-以達到 1 to Many，btw這篇提出的訓練方法也挺有趣的，使用兩種model做訓練，但是兩種model的部分component相同的。
+學到共通特徵，然後經由random一個數值來改變輸出，以達到 1 to Many，btw這篇提出的訓練方法也挺有趣的，使用兩種model做訓練，但是兩種model的部分component相同的。
 
 
 
@@ -51,16 +49,14 @@ content code:
 我們可以想成是每個class共有的特徵，如狗和貓都有眼睛 嘴巴 鼻子
 convolution layer使用Instance Normalization(IN)
 近年來style transfer方面的工作，使用IN能得到較好的結果
-不過看文章的時候記得注意這篇文章的日期，這領域進步的太快。。。
+
 
 
 sytle code:
 
-我們可以想成是每個class各自的特徵，
-如狗有柯基犬和哈士奇，雖然都是狗，但外表差很多
+我們可以想成是每個class各自的特徵，如狗有柯基犬和哈士奇，雖然都是狗，但外表差很多
 convolution layer使用Batch Normalization
-論文指出，這邊不用IN是因為，每個style有各自的特性分佈。
-如果使用IN會將mean和variance移除。
+這邊不用IN是因為，每個style有各自的特性分佈。如果使用IN會將mean和variance移除。
 這樣不管S1, S2怎麼train， 可能都會產生差不多的圖片。
 
 概念如下
@@ -96,9 +92,7 @@ loss function
 
 ![image](https://github.com/willy-lo/CVFX-HW2/blob/master/formulation_1.png)
 
-上圖可看作我們希望自己的reconstruction error要最小，
-
-意思是一張圖片(x)進入encoder再進去decoder出來的結果(y)
+上圖可看作我們希望自己的reconstruction error要最小，意思是一張圖片(x)進入encoder再進去decoder出來的結果(y)
 
 希望x和y相近。
 

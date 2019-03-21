@@ -10,6 +10,7 @@
 
 2.test結果比較:
 
+![image](https://github.com/willy-lo/CVFX-HW2/blob/master/sum.png)
 
 
 3.別的方法:

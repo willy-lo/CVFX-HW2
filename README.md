@@ -39,7 +39,7 @@ NEURAL-style training 進度條:
 
  ![image](https://github.com/willy-lo/CVFX-HW2/blob/master/test2.png)
 
-4.1.CycleGAN的原理:
+4.CycleGAN的原理:
 
 CycleGAN的原理可以概述為：將一類圖片轉換成另一類圖片。也就是說，現在有兩個樣本空間，X和Y，我們希望把X空間中的樣本轉換成Y空間中的樣本。
 

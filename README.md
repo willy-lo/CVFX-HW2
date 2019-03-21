@@ -1,13 +1,21 @@
 # CVFX-HW2
 
-1.training 進度條:
+1.MUNIT training 進度條:
+1000000個iterationtrain不完，所以我們只有train到第59萬個iteration的結果。
 
 ![image](https://github.com/willy-lo/CVFX-HW2/blob/master/%20MUNIT_train.png)
+
+![image](https://github.com/willy-lo/CVFX-HW2/blob/master/model.png)
+
 
 2.test結果比較:
 
 
+
 3.別的方法:
+NEURAL-style training 進度條:
+![image](https://github.com/willy-lo/CVFX-HW2/blob/master/neural-style.png)
+
 
 4.MUNIT 介紹— Multimodal Unsupervised Image-to-Image Translation
 

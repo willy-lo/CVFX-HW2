@@ -1,6 +1,7 @@
 # CVFX-HW2
 
 1.MUNIT training 進度條:
+
 1000000個iteration怕train不完，所以我們只有train到第50萬個iteration的結果。總共大概花了2.5天的時間完成。
 
 ![image](https://github.com/willy-lo/CVFX-HW2/blob/master/%20MUNIT_train.png)

@@ -10,6 +10,9 @@
 
 
 2.test結果比較:
+
+
+
 我們這組選取兩張夏天的跟兩張冬天的,從圖中看出來夏天轉冬天的效果還是比冬天轉夏天來的好
 ![image](https://github.com/willy-lo/CVFX-HW2/blob/master/sum.png)
 

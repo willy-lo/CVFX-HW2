@@ -2,7 +2,10 @@
 
 1.training 進度條:
 
+![image](https://github.com/willy-lo/CVFX-HW2/blob/master/%20MUNIT_train.png)
+
 2.test結果比較:
+
 
 3.別的方法:
 

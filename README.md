@@ -23,6 +23,8 @@ NEURAL-style training 進度條:
 
 ![image](https://github.com/willy-lo/CVFX-HW2/blob/master/neural-style.png)
 
+![image](https://github.com/willy-lo/CVFX-HW2/blob/master/finish.png)
+
 在神經網路出現之後Neural Style成為了一個非常有意思的深度學習應用:輸入一張代表內容的圖片和一張代表風格的圖片，深度學習網路會輸出一張融合了這個風格和內容的新作品。TensorFlow是Google開源的最流行的深度學習框架。在GitHub上有開源的TensorFlow實現的Neural Style代碼。我們還是先看一下Neural Style這篇論文介紹了怎樣的方法來解決這個問題的吧。
 首先，有幾個概念:
 卷積神經網路(CNN):

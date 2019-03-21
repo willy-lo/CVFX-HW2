@@ -1,7 +1,7 @@
 # CVFX-HW2
 
 1.MUNIT training 進度條:
-1000000個iterationtrain不完，所以我們只有train到第59萬個iteration的結果。
+1000000個iteration train不完，所以我們只有train到第50萬個iteration的結果。
 
 ![image](https://github.com/willy-lo/CVFX-HW2/blob/master/%20MUNIT_train.png)
 
